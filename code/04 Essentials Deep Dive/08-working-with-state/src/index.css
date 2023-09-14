@@ -92,7 +92,7 @@ h1 {
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.2s;
-  padding: 0.5rem 0.25rem 0.25rem 0.25rem;
+  padding: 0.5rem 0.25rem;
   text-align: center;
 }
 
