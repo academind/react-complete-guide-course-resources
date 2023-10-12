@@ -25,29 +25,29 @@ To give you more details, this guide covers:
 
 ## Which sections are affected?
 
-- Almost all the sections before the "Diving into Redux" section (i.e., that's the first section that's not affected) - any other sections after that section are not affected
+- **Almost all the sections up to the "Diving into Redux" section** (excluded, i.e., that's the first section that remains unchanged) - any other sections after that section are not affected
 - Exceptions:
   - **"JavaScript Refresher"** did not change
   - **"An Alternative Way Of Building Components: Class-based Components"** did not change
   - **"Replacing Redux with React Hooks"** section was removed (though the videos can still be accessed - [learn more](#what-happened-to-the-old-course-content))
-  - **"Animating React Apps"** → old lectures were removed since this section received a big update earlier in 2023 (the old lectures which were a couple of years now were removed - but they're also still accessible, [learn more](#what-happened-to-the-old-course-content)
+  - **"Animating React Apps"** → old lectures were removed since this section received a big update earlier in 2023 (the old lectures which were a couple of years now were removed - but they're also still accessible, [learn more](#what-happened-to-the-old-course-content))
 - Below you find a [section-by-section guide](#section-by-section-guide-on-what-changed--how-to-continue) that explains what changed in each affected section and what that means for you if you're currently taking that section
 
 ## How's the update provided to you?
 
 - The new content is **inserted into the existing course** (i.e., you get it for free!)
 - New content is inserted before old content → If a section is affected, its new lectures are added in front of the old lectures
-- "--- LEGACY CONTENT BELOW ---" separator lectures were added to separate old from new lectures
+- `--- LEGACY CONTENT BELOW ---` separator lectures were added to separate old from new lectures
 - You can therefore finish a section you're currently taking by ignoring its new lectures and then moveing to the next section where you ignore the old lectures
-- The "--- LEGACY CONTENT BELOW ---" lectures contain links that will get you to the next lecture you should watch (i.e., the first lecture of the following section)
+- The `--- LEGACY CONTENT BELOW ---` lectures contain links that will get you to the next lecture you should watch (i.e., the first lecture of the following section)
 - A couple of sections that teach basic React concepts (e.g., "React Basics & Working with Components") were "merged" into three new "React Essentials" sections
 - Since number of "basic sections" changed, the sections were not actually merged - instead, the old basic sections were moved to the end of the course and three new "React Essentials" sections were inserted after the "JavaScript Refresher" section
-- If you're currently in one of these "old basic sections" (which are now marked as LEGACY and were moved to the end of the course), you can simply continue in there and then switch to the "Styling React Components" section once you reached the end of the "Rendering Lists & Conditional Content" section (a link is provided in the last lecture of that section)
+- If you're currently in one of these "old basic sections" (which are now marked as `LEGACY` and were moved to the end of the course), you can simply continue in there and then switch to the "Styling React Components" section once you reached the end of the "Rendering Lists & Conditional Content" section (a link is provided in the last lecture of that section)
 - Alternatively, you can "restart" by going to the first lecture in the new "React Essentials - Components, JSX, Props, State & More" section (consider ramping up the video playback speed if you already learned about some key React concepts)
 
 ## What happened to the old course content?
 
-- Old sections & lectures are marked as LEGACY or separated by the "--- LEGACY CONTENT BELOW ---" lecture
+- Old sections & lectures are marked as `LEGACY` or separated by the `--- LEGACY CONTENT BELOW ---` lecture
 - The old content will be kept around until at least **December 11th 2023** - if a lot of students are consuming that old content by that time, the transition period will be prolonged until January 15th
 - An educational announcement will be sent out one week before the old content gets unpublished - so check the [announcements section in the Udemy course](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25888820#announcements) regularly
 - Even after that date, the old videos will still be available as they will be attached to a [special lecture](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25764404#announcements) that's in the course (i.e., you can download them from there)
@@ -80,7 +80,7 @@ To **regain your course progress**, you'll have to manually **mark any lectures 
 
 Simply start at lecture 1 in section 1 and complete the course step-by-step, lecture-by-lecture and section-by-section in the order you find in the curriculum.
 
-Ignore any LEGACY sections and lectures after a "--- LEGACY CONTENT BELOW ---" separator lecture.
+Ignore any `LEGACY` sections and lectures after a `--- LEGACY CONTENT BELOW ---` separator lecture.
 
 To **fix your course progress**, you'll have to manually **mark any lectures you ignore as completed** (i.e., the LEGACY content) - unfortunately, Udemy gives me no better way of providing course updates.
 
@@ -261,7 +261,7 @@ You can explore the brand-new "React Essentials - Components, JSX, Props, State 
 
 #### What changed?
 
-Added new lectures in front of old lectures, separated by a "--- LEGACY CONTENT BELOW ---" lecture.
+Added new lectures in front of old lectures, separated by a `--- LEGACY CONTENT BELOW ---` lecture.
 
 This section **was not moved**!
 
@@ -325,7 +325,7 @@ Since the lectures were not updated, nothing changes for you.
 
 This section was renamed (it was previously named "Diving Deeper: Working with Fragments, Portals & Refs"). Fragments are no longer covered in the (updated) section content (since they are covered in the "React Essentials" sections now).
 
-Added new lectures in front of old lectures, separated by a "--- LEGACY CONTENT BELOW ---" lecture.
+Added new lectures in front of old lectures, separated by a `--- LEGACY CONTENT BELOW ---` lecture.
 
 This section **was not moved**!
 
@@ -382,7 +382,7 @@ This section was split up into two separate sections:
 - (1) "React's Context API & useReducer - Advanced State Management" - the section before this section here
 - (2) "Handling Side Effects with useEffect" - this section
 
-(1) contains only new lectures, (2) is this old section, which now contains both new and old lectures. New lectures were added in front of the old lectures, separated by a "--- LEGACY CONTENT BELOW ---" lecture.
+(1) contains only new lectures, (2) is this old section, which now contains both new and old lectures. New lectures were added in front of the old lectures, separated by a `--- LEGACY CONTENT BELOW ---` lecture.
 
 This section **was not moved** (just split up into two sections)!
 
@@ -408,7 +408,7 @@ You can explore the new lectures in both sections this section was split into.
 
 This section was renamed since we're now building a different demo / practice app (it was previously named "Practice Project: Building a Food Order App").
 
-Added new lectures (→ Quiz app) in front of old lectures (→ Food order app), separated by a "--- LEGACY CONTENT BELOW ---" lecture.
+Added new lectures (→ Quiz app) in front of old lectures (→ Food order app), separated by a `--- LEGACY CONTENT BELOW ---` lecture.
 
 This section **was not moved!**!
 
@@ -432,7 +432,7 @@ You can explore the new lectures that were added at the beginning of this sectio
 
 #### What changed?
 
-Added new lectures in front of old lectures, separated by a "--- LEGACY CONTENT BELOW ---" lecture.
+Added new lectures in front of old lectures, separated by a `--- LEGACY CONTENT BELOW ---` lecture.
 
 This section **was not moved!**!
 
@@ -456,7 +456,7 @@ You can explore the new lectures that were added at the beginning of this sectio
 
 #### What changed?
 
-Added new lectures in front of old lectures, separated by a "--- LEGACY CONTENT BELOW ---" lecture.
+Added new lectures in front of old lectures, separated by a `--- LEGACY CONTENT BELOW ---` lecture.
 
 This section **was not moved**!
 
@@ -480,7 +480,7 @@ You can explore the new lectures that were added at the beginning of this sectio
 
 #### What changed?
 
-Added new lectures in front of old lectures, separated by a "--- LEGACY CONTENT BELOW ---" lecture.
+Added new lectures in front of old lectures, separated by a `--- LEGACY CONTENT BELOW ---` lecture.
 
 This section **was not moved**!
 
@@ -504,7 +504,7 @@ You can explore the new lectures that were added at the beginning of this sectio
 
 #### What changed?
 
-Added new lectures in front of old lectures, separated by a "--- LEGACY CONTENT BELOW ---" lecture.
+Added new lectures in front of old lectures, separated by a `--- LEGACY CONTENT BELOW ---` lecture.
 
 This section **was not moved**!
 
@@ -532,7 +532,7 @@ This section was renamed since we're now building a different demo / practice ap
 
 We now build a "Food Order" app from scratch in this section (instead of enhancing the old one which was built in an earlier section).
 
-Added the new lectures (→ "Food Order" app from scratch) in front of the old lectures (→ enhancing the old "Food Order" app), separated by a "--- LEGACY CONTENT BELOW ---" lecture.
+Added the new lectures (→ "Food Order" app from scratch) in front of the old lectures (→ enhancing the old "Food Order" app), separated by a `--- LEGACY CONTENT BELOW ---` lecture.
 
 This section **was not moved**!
 
