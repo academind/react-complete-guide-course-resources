@@ -30,7 +30,9 @@ To give you more details, this guide covers:
   - **"JavaScript Refresher"** did not change
   - **"An Alternative Way Of Building Components: Class-based Components"** did not change
   - **"Replacing Redux with React Hooks"** section was removed (though the videos can still be accessed - [learn more](#what-happened-to-the-old-course-content))
+  - **Debugging**: The old lectures were unpublished to make room for the update - but they're also still accessible, [learn more](#what-happened-to-the-old-course-content))
   - **"Animating React Apps"** → old lectures were removed since this section received a big update earlier in 2023 (the old lectures which were a couple of years now were removed - but they're also still accessible, [learn more](#what-happened-to-the-old-course-content))
+  - **React Hooks Summary**: This section was unpublished to make room for the update - but they're also still accessible, [learn more](#what-happened-to-the-old-course-content)
 - Below you find a [section-by-section guide](#section-by-section-guide-on-what-changed--how-to-continue) that explains what changed in each affected section and what that means for you if you're currently taking that section
 
 ## How's the update provided to you?
