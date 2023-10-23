@@ -434,17 +434,13 @@ You can explore the new lectures that were added at the beginning of this sectio
 
 #### What changed?
 
-Added new lectures in front of old lectures, separated by a `--- LEGACY CONTENT BELOW ---` lecture.
+Replaced the lecture videos of this section with new videos. The old content was removed right away to make room for the update since this was a very short section anyways.
 
-This section **was not moved!**!
+This section **was not moved**!
 
 #### If you're curently in this section
 
-If you have time, restart the section, otherwise simply continue with it (i.e., ignore the new lectures).
-
-After finishing this section, continue with the next section - that will then already be an updated section (i.e., you switch to the updated content smoothly).
-
-You should mark the lectures you're ignoring (i.e., either the new or the old lectures) as "Completed" manually to fix your course progress once you finished this section.
+Simply restart the section (it's a pretty short section, hence I took this approach).
 
 #### If you already completed this section
 
