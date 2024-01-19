@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 75rem;
+}
+
+.slideshow {
+  width: 40rem;
+  height: 25rem;
+}
+
+.hero {
+  color: #ddd6cb;
+  font-size: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #f9572a, #ffc905);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cta a:hover,
+.cta a:active {
+  background: linear-gradient(90deg, #fd4715, #f9b241);
+}
+
+.cta a:first-child {
+  background: transparent;
+  font-weight: normal;
+  color: #ff9b05;
+  padding-left: 0;
+}
+
+.cta a:first-child:hover,
+.cta a:first-child:active {
+  background: transparent;
+  color: #f9b241;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  color: #ddd6cb;
+  font-size: 1.5rem;
+  max-width: 50rem;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+}

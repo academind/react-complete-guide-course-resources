@@ -1,0 +1,89 @@
+.header {
+  gap: 3rem;
+  margin: 3rem auto 5rem auto;
+  width: 90%;
+  max-width: 75rem;
+  color: #ddd6cb;
+  font-size: 1.5rem;
+}
+
+.header h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #f9572a, #ff8a05);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main {
+  width: 90%;
+  max-width: 75rem;
+  margin: 3rem auto;
+}
+
+.form {
+  max-width: 50rem;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #b3aea5;
+  font-weight: bold;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #454952;
+  background: #1c2027;
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ddd6cb;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline-color: #f99f2a;
+  background-color: #1f252d;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.row p {
+  width: 100%;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions button {
+  border: 0;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  border: none;
+  color: #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.actions button:hover,
+.actions button:focus {
+  background: linear-gradient(90deg, #fd4715, #f9b241);
+}
