@@ -40,27 +40,21 @@ function deriveGameBoard(gameTurns) {
   return gameBoard;
 }
 
-function deriveWinner(gameBoard, players) {
-  let winner;
+function deriveWinner(gameBoard, player) {
+    let winner;
+    for (const combination of WINNING_COMBINATIONS) {
+        const [row0, col0, row1, col1, row2, col2] = combination;
 
-  for (const combination of WINNING_COMBINATIONS) {
-    const firstSquareSymbol =
-      gameBoard[combination[0].row][combination[0].column];
-    const secondSquareSymbol =
-      gameBoard[combination[1].row][combination[1].column];
-    const thirdSquareSymbol =
-      gameBoard[combination[2].row][combination[2].column];
+        const firstSymbol = gameBoard[row0][col0];
+        const secondSymbol = gameBoard[row1][col1];
+        const thirdSymbol = gameBoard[row2][col2];
 
-    if (
-      firstSquareSymbol &&
-      firstSquareSymbol === secondSquareSymbol &&
-      firstSquareSymbol === thirdSquareSymbol
-    ) {
-      winner = players[firstSquareSymbol];
+        if (firstSymbol && firstSymbol === secondSymbol && firstSymbol === thirdSymbol) {
+            winner = player[firstSymbol];
+            return winner;
+        }
     }
-  }
-
-  return winner;
+    return null;
 }
 
 function App() {
