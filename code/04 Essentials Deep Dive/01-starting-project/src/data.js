@@ -15,7 +15,7 @@ export const CORE_CONCEPTS = [
     title: 'JSX',
     description:
       'Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.',
-  },
+  }, 
   {
     image: propsImg,
     title: 'Props',
