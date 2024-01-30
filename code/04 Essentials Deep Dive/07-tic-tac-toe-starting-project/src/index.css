@@ -240,7 +240,7 @@ ol {
 }
 
 #log {
-  max-width: 20rem;
+  max-width: 75rem;
   color: #3f3b00;
   list-style: none;
   margin: 2rem auto;
@@ -252,6 +252,7 @@ ol {
   border-radius: 4px;
   animation: slide-in-from-left 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   margin: 0.75rem;
+  float:right;
 }
 
 #log li.highlighted {
