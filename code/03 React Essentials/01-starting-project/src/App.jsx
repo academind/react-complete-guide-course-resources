@@ -23,6 +23,15 @@ function Header() {
   );
 }
 
+/**
+ * Renders a core concept item.
+ *
+ * @param {Object} props - The component props.
+ * @param {string} props.title - The title of the core concept.
+ * @param {string} props.description - The description of the core concept.
+ * @param {string} props.image - The URL of the image for the core concept.
+ * @returns {JSX.Element} The rendered core concept item.
+ */
 function CoreConcept({ title, description, image }) {
   return (
     <li>
@@ -31,7 +40,6 @@ function CoreConcept({ title, description, image }) {
       <p>{description}</p>
     </li>
   );
-
 }
 
 function App() {
