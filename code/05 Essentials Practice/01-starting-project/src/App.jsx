@@ -21,13 +21,18 @@ function App() {
     });
   }
 
+  const inputIsValid = userInput.duration >= 1;
+
   return (
     <>
-    <Header />
-    <UserInput userInput={userInput} onChange={handleChangeInput} />
-    <Results />
+      <Header />
+      <UserInput userInput={userInput} onChange={handleChangeInput} />
+      {!inputIsValid && (
+        <p className="center">Please enter a duration greater than zero.</p>
+      )}
+      {inputIsValid && <Results input={userInput} />}
     </>
-    
+
   )
 }
 
