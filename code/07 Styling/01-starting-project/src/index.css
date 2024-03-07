@@ -25,49 +25,6 @@ button:focus {
   outline: none;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-header img {
-  object-fit: contain;
-  margin-bottom: 2rem;
-  width: 11rem;
-  height: 11rem;
-}
-
-header h1 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.4em;
-  text-align: center;
-  text-transform: uppercase;
-  color: #9a3412;
-  font-family: 'Pacifico', cursive;
-  margin: 0;
-}
-
-header p {
-  text-align: center;
-  color: #a39191;
-  margin: 0;
-}
-
-@media (min-width: 768px) {
-  header {
-    margin-bottom: 4rem;
-  }
-
-  header h1 {
-    font-size: 2.25rem;
-  }
-}
-
 #auth-inputs {
   width: 100%;
   max-width: 28rem;
@@ -107,7 +64,7 @@ header p {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
-label.invalid {
+.label.invalid {
   color: #f87171;
 }
 
