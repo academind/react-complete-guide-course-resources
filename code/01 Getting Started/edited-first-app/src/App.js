@@ -3,7 +3,7 @@ import "./styles.css";
 
 const content = [
   [
-    "React is extremely popular",
+    "React is extremely popular!",
     "It makes building complex, interactive UIs a breeze",
     "It's powerful & flexible",
     "It has a very active and versatile ecosystem"
