@@ -1,41 +1,16 @@
-import reactImg from "./assets/react-core-concepts.png";
-import { CORE_CONCEPTS } from "./data.js"
+import { CORE_CONCEPTS } from "./data.js";
+import { Header }  from "./components/Header/Header.jsx";
+import { CoreConcept } from "./components/CoreConcept/CoreConcept.jsx";
+import TabButton from "./components/TabButton/TabButton.jsx";
 
-const reactDescriptions = ["Fundamental", "Crucial", "Core"];
-
-function genRandomInt(max) {
-  return Math.floor(Math.random() * (max + 1));
-}
-
-function Header() {
-  const description =
-    reactDescriptions[genRandomInt(reactDescriptions.length - 1)];
-  //Keeping javascript code outside of your JSX returns is generally considered good practice.
-  return (
-    <header>
-      <img src={reactImg} alt="Stylized atom" />
-      <h1>React Essentials</h1>
-      <p>
-        {description} React concepts you will need for almost any app you are
-        going to build!
-      </p>
-    </header>
-  );
+function handleClick () {
+  console.log("hello world! - Clicked!")
 }
 
 //you execute functions/components not by calling them, but with instanciating as if they were HTML elements.
 //React components MUST start with an uppercase character, to tell React that it's not a built-in component, like <header> or <Header>
 
-function CoreConcept({image, title, description}) {
-  //you can destructure incoming data to write less!
-  return (
-    <li>
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </li>
-  );
-}
+
 
 function App() {
   return (
@@ -55,6 +30,16 @@ function App() {
               image={CORE_CONCEPTS[3].image}
             />
           </ul>
+        </section>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            <TabButton onClick={handleClick}>Components</TabButton>
+            <TabButton onClick={handleClick}>JSX</TabButton>
+            <TabButton onClick={handleClick}>Props</TabButton>
+            <TabButton onClick={handleClick}>State</TabButton>
+          </menu>
+
         </section>
       </main>
     </div>
