@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 function Header() {
   return (
     <header>
@@ -11,13 +13,51 @@ function Header() {
   );
 }
 
+function MainGoal({ id }) {
+  return (
+    <p id={id}>
+      My main goal is to learn react, from the ground up and in depth!!
+    </p>
+  );
+}
+
+function AskName() {
+  const [name, setName] = useState("");
+  function handleClick() {
+    const inputName = prompt("What is your name ?");
+    setName(inputName);
+  }
+
+  return (
+    <div>
+      <button onClick={handleClick}>Tell me your name</button>
+      {name && <p>Hello there !{name}</p>}
+    </div>
+  );
+}
+
+function Button({ onClick }) {
+  return (
+    <button onClick={onClick}>
+      <label>This is a button.</label>
+    </button>
+  );
+}
+
 function App() {
+  function handleButtonClick() {
+    alert("You pressed the button!");
+  }
+
   return (
     <div>
       <Header />
       <main>
         <h2>Time to get started!</h2>
+        <AskName />
       </main>
+      <MainGoal id="maingoal"></MainGoal>
+      <Button onClick={handleButtonClick}></Button>
     </div>
   );
 }

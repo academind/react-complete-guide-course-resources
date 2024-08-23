@@ -53,6 +53,10 @@ main {
   margin: auto;
 }
 
+#maingoal {
+  text-align: center;
+}
+
 #core-concepts {
   padding: 2rem;
   border-radius: 6px;
