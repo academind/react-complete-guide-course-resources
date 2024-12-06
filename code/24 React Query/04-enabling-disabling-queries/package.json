@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.0.0-beta.16",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
