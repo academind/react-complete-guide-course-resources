@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222123;
+  color: #bfbac4;
+}
+
+main {
+  width: 90%;
+  max-width: 50rem;
+  margin: 4rem auto;
+}
+
+h2 {
+  color: #e3e0e7;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.rsc,
+.client-cmp {
+  margin: 2rem 0;
+  padding: 2rem;
+  border: 2px solid #58e7fa;
+  background-color: #252b2c;
+  border-radius: 8px;
+}
+
+.rsc > h2 {
+  color: #58e7fa;
+}
+
+.rsc > p strong {
+  color: #58e7fa;
+}
+
+.client-cmp {
+  border-color: #fa58cf;
+  background-color: #2f262d;
+}
+
+.client-cmp > h2 {
+  color: #fa58cf;
+}
+
+.client-cmp > p strong {
+  color: #fa58cf;
+}
+
+form {
+  max-width: 25rem;
+}
+
+form label {
+  display: block;
+  margin: 1rem 0;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+form input {
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #bfbac4;
+  border-radius: 4px;
+}
+
+form p:has(button) {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-size: 1rem;
+  border: 1px solid #58e7fa;
+  border-radius: 4px;
+  background-color: #58e7fa;
+  color: #222123;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #58b9fa;
+  border-color: #58b9fa;
+}
+
+.error {
+  padding: 2rem;
+  border: 2px solid #f7711d;
+  color: #f5c1a1;
+  background-color: #292523;
+}
+
+.error > h2 {
+  color: #f7711d;
+}
