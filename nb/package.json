@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "workspaces": [
+    "*-project/*"
+  ],
+  "dependencies": {
+    "react-essentials-start": "file:01-React-Essentials"
+  }
+}

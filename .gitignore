@@ -2,3 +2,10 @@ node_modules
 .DS_Store
 .prettierrc
 Dockerfile
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
+/.idea/material_theme_project_new.xml
+/.idea/modules.xml
+/.idea/prettier.xml
+/.idea/react-complete-guide.iml
+/.idea/vcs.xml
