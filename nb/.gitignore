@@ -1,4 +1,5 @@
 */node_modules/*
 **lock.yaml
-/*/package-lock.json
+**/package-lock.json
 /*/pnpm-lock.yaml
+
