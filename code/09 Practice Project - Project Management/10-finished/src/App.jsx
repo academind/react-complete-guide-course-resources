@@ -96,13 +96,20 @@ function App() {
     (project) => project.id === projectsState.selectedProjectId
   );
 
+  const projectTasks =
+  selectedProject != undefined
+    ? projectsState.tasks.filter(
+        (task) => task.projectId == selectedProject.id
+      )
+    : [];
+
   let content = (
     <SelectedProject
       project={selectedProject}
       onDelete={handleDeleteProject}
       onAddTask={handleAddTask}
       onDeleteTask={handleDeleteTask}
-      tasks={projectsState.tasks}
+      tasks={projectTasks}
     />
   );
 
