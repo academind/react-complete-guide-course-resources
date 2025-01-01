@@ -4,6 +4,7 @@
     "*-project/*"
   ],
   "dependencies": {
-    "react-essentials-start": "file:01-React-Essentials"
+    "react-essentials-start": "file:01-React-Essentials",
+    "react-essentials-start-2": "file:02-Essentials-DeepDown"
   }
 }
