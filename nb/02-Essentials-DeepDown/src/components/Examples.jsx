@@ -2,6 +2,7 @@ import TabButton from "./TabButton";
 import { ExampleObject } from "../data";
 import { useState } from "react";
 import Section from "./Sections";
+import TabMenu from "./TabMenu";
 
 export default function example() {
   const [selectedTopic, setSelectedTopic] = useState();
@@ -37,8 +38,9 @@ export default function example() {
   console.log("EXAMPLE COMPONENT EXECUTING");
   return (
     <Section id="examples" title="Examples">
-      <menu>{Buttons}</menu>
-      {tabContent}
+      <TabMenu Container="menu" buttons={Buttons}>
+        {tabContent}
+      </TabMenu>
     </Section>
   );
 }
