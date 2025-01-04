@@ -166,12 +166,10 @@ ol {
     gap: 2rem;
     margin: 3rem 0;
     padding: 0;
-    flex-direction: column;
 }
 
 #game-board ol {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     margin: 0;

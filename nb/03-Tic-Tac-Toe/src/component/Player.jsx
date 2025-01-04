@@ -7,9 +7,9 @@ import React from "react";
  * @returns {Element}
  * @constructor
  */
-export function Player({ player, symbol }) {
-  const [playerName, setPlayerName] = React.useState(player);
-  const [tempPlayer, setTempPlayer] = React.useState(player);
+export function Player({ playerName, setPlayerName, symbol, isPlaying }) {
+  // const [playerName, setPlayerName] = React.useState(player);
+  const [tempPlayer, setTempPlayer] = React.useState(playerName);
   const [edit, setEdit] = React.useState(false);
 
   /**
@@ -33,7 +33,7 @@ export function Player({ player, symbol }) {
   const handleChange = (event) => {
     // if (!checkNameIsValid(event.target.value)) return;
     setTempPlayer(event.target.value);
-    event.stopPropagation();
+    // event.stopPropagation();
   };
 
   /**
@@ -59,6 +59,7 @@ export function Player({ player, symbol }) {
           type="text"
           value={tempPlayer}
           onChange={handleChange}
+          autoFocus={edit}
           onBlur={() => {
             // to stop blur fire before save button click
             setTimeout(() => {
@@ -76,7 +77,7 @@ export function Player({ player, symbol }) {
         <button
           onClick={(e) => {
             setEdit(true);
-            e.preventDefault();
+            // e.preventDefault();
           }}
         >
           Edit
@@ -95,7 +96,7 @@ export function Player({ player, symbol }) {
     }
   };
   return (
-    <li>
+    <li className={isPlaying ? "active" : undefined}>
       <span className="player">
         {playerNameField()}
         <span className="player-symbol">{symbol}</span>
