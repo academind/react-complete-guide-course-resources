@@ -11,8 +11,8 @@ export function GameBoard({
   // currentPlayer,
   // playerSymbol,
   handleGameBoardChange,
-  // gameBoard,
-  turns,
+  gameBoard,
+  // turns,
 }) {
   // const [gameBoard, setGameBoard] = React.useState(initGameBoard);
   //
@@ -20,25 +20,18 @@ export function GameBoard({
   //
   // function isPlayerWon(arr) {
   //   let isPlayerWon = false;
-  //   console.log(checkWinner(arr));
+  //   console.log(gameBoardUtil(arr));
   // }
   //
   // function handleGameBoardChange(row, col) {
   //   setGameBoard((prevState) => {
   //     let newGameBoard = [...prevState.map((inner) => [...inner])];
   //     newGameBoard[row][col] = playerSymbol;
-  //     console.log(checkWinner(newGameBoard));
+  //     console.log(gameBoardUtil(newGameBoard));
   //     return newGameBoard;
   //   });
   //   nextPlayerfn();
   // }
-
-  const gameBoard = initGameBoard;
-
-  for (const turn of turns) {
-    const { row, column } = turn.square;
-    gameBoard[row][column] = turn.symbol;
-  }
 
   return (
     <ol id="game-board">
@@ -47,7 +40,10 @@ export function GameBoard({
           <ol>
             {row.map((col, k) => (
               <li key={k}>
-                <TicButton onClick={() => handleGameBoardChange(i, k)}>
+                <TicButton
+                  isDisabled={col !== null}
+                  onClick={() => handleGameBoardChange(i, k)}
+                >
                   {col}
                 </TicButton>
               </li>

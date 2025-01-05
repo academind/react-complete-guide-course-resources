@@ -2,26 +2,37 @@ import { Player } from "./component/Player.jsx";
 import React, { useState } from "react";
 import { GameBoard } from "./component/GameBoard.jsx";
 import { Log } from "./component/Log.jsx";
+import {
+  derivedCurrentPlayer,
+  derivedGameBoard,
+  gameBoardUtil,
+  playerSymbol,
+} from "./util/GameBoardUtil.js";
+import { GameOver } from "./component/GameOver.jsx";
 
-const initGameBoard = [
-  [null, null, null],
-  [null, null, null],
-  [null, null, null],
-];
-
-/**
- *
- * @returns {JSX.Element}
- * @constructor
- */
 function App() {
   const [player1, setPlayer1] = useState("player 1");
   const [player2, setPlayer2] = useState("player 2");
-  const [currentPlayer, setCurrentPlayer] = useState(0);
+  // const [currentPlayer, setCurrentPlayer] = useState(0);
 
-  const [gameBoard, setGameBoard] = React.useState(initGameBoard);
+  // const [gameBoard, setGameBoard] = React.useState(initGameBoard);
   const [gameTurn, setGameTurn] = React.useState([]);
-  const playerSymbol = ["X", "O"];
+
+  let currentPlayer = derivedCurrentPlayer(gameTurn);
+  let winPlayer;
+  const gameBoard = derivedGameBoard(gameTurn);
+  const winner = gameBoardUtil(gameBoard); //get winner symbol
+  const hasDraw = gameTurn.length === 9 && !winner;
+  if (winner) {
+    console.log("winner", winner);
+    //get winner name
+    winPlayer =
+      playerSymbol.findIndex((p) => p === winner.toUpperCase()).valueOf() === 0
+        ? player1
+        : player2;
+  } else if (hasDraw) {
+    console.log("draw", hasDraw);
+  }
 
   function handleGameBoardChange(row, col) {
     // setGameBoard((prevState) => {
@@ -34,8 +45,8 @@ function App() {
     //   return newGameBoard;
     // });
     setGameTurn((prevState) => {
-      let curr = 0;
-      if (prevState.length > 0 && prevState[0].player === 0) curr = 1;
+      let curr = derivedCurrentPlayer(prevState);
+      // if (prevState.length > 0 && prevState[0].player === 0) curr = 1;
       if (
         prevState.filter((p) => p.square.row === row && p.square.column === col)
           .length > 0
@@ -50,17 +61,22 @@ function App() {
             column: col,
           },
           symbol: playerSymbol[curr],
+          playerName: currentPlayer === 0 ? player1 : player2,
         },
         ...prevState,
       ];
-      updateNextPlayingPlayer();
+      // updateNextPlayingPlayer();
       return newTurn;
     });
   }
 
-  function updateNextPlayingPlayer() {
-    setCurrentPlayer((c) => (c === 0 ? 1 : 0));
+  function rematch() {
+    setGameTurn([]);
   }
+
+  // function updateNextPlayingPlayer() {
+  //   setCurrentPlayer((c) => (c === 0 ? 1 : 0));
+  // }
 
   function setPlayer(player) {}
 
@@ -86,12 +102,20 @@ function App() {
             // currentPlayer={currentPlayer}
             // playerSymbol={playerSymbol[currentPlayer]}
             handleGameBoardChange={handleGameBoardChange}
-            // gameBoard={gameBoard}
-            turns={gameTurn}
+            gameBoard={gameBoard}
+            // turns={gameTurn}
           />
         </div>
-        <Log />
+        {(winner || hasDraw) && (
+          <GameOver
+            winner={winPlayer}
+            draw={hasDraw}
+            rematchHandler={rematch}
+          />
+        )}
       </div>
+
+      <Log logs={gameTurn} />
     </main>
   );
 }

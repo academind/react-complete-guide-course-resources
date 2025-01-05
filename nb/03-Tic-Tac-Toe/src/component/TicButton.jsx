@@ -1,7 +1,9 @@
-export function TicButton({ children, onClick }) {
+export function TicButton({ children, onClick, isDisabled = false }) {
   return (
     <>
-      <button onClick={onClick}>{children}</button>
+      <button disabled={isDisabled} onClick={onClick}>
+        {children}
+      </button>
     </>
   );
 }
