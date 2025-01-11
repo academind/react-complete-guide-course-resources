@@ -1,45 +1,45 @@
 {
-  "name": "react-ts",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "react-scripts": "^5.0.1",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.1.0",
-    "@testing-library/user-event": "^14.5.2",
-    "@types/jest": "^29.5.14",
-    "@types/node": "^22.10.5",
-    "@types/react": "^19.0.3",
-    "@types/react-dom": "^19.0.2",
-    "typescript": "^4.2.3",
-    "web-vitals": "^4.2.4"
-  }
+    "name": "react-ts",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "react-scripts": "^5.0.1",
+        "@testing-library/jest-dom": "^6.6.3",
+        "@testing-library/react": "^16.1.0",
+        "@testing-library/user-event": "^14.5.2",
+        "@types/jest": "^29.5.14",
+        "@types/node": "^22.10.5",
+        "@types/react": "^19.0.3",
+        "@types/react-dom": "^19.0.2",
+        "typescript": "^4.2.3",
+        "web-vitals": "^1.1.1"
+    }
 }
