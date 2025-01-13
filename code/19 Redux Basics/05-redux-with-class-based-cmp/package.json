@@ -11,7 +11,7 @@
     "react-redux": "^9.2.0",
     "react-scripts": "^5.0.1",
     "redux": "^5.0.1",
-    "web-vitals": "^4.2.4"
+    "web-vitals": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

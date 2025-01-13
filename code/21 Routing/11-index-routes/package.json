@@ -10,7 +10,7 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^4.2.4"
+    "web-vitals": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
