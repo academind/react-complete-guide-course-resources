@@ -9,11 +9,14 @@ export default function Modal({ title, children, onClose }) {
       <motion.dialog
         variants={{
           hidden: { opacity: 0, y: 30 },
-          visible: { opacity: 1, y: 0 }
+          visible: { opacity: 1, y: 0 },
+          /* FIX FOR NEWER FRAMER-MOTION */
+          exit: { opacity: 0, y: 30 },
         }}
         initial="hidden"
         animate="visible"
-        exit="hidden"
+        /* FIX FOR NEWER FRAMER-MOTION */
+        exit="exit"
         open
         className="modal"
       >
