@@ -19,9 +19,11 @@ export default function GameBoard({onSelectSquare, activePlayerSymbol}) {
 
             return updatedBoard;
         });
+
+        onSelectSquare();
     }
 
-    onSelectSquare();
+
 
 
     return (
