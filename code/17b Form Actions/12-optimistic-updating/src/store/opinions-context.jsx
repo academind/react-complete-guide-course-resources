@@ -88,5 +88,5 @@ export function OpinionsContextProvider({ children }) {
     downvoteOpinion,
   };
 
-  return <OpinionsContext value={contextValue}>{children}</OpinionsContext>;
+  return <OpinionsContext.Provider value={contextValue}>{children}</OpinionsContext.Provider>;
 }
