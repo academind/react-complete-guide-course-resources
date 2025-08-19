@@ -37,7 +37,8 @@ export default function NewChallenge({ onDone }) {
       animate(
         'input, textarea',
         { x: [-10, 0, 10, 0] },
-        { type: 'spring', duration: 0.2, delay: stagger(0.05) }
+        /** FIX FOR NEWER FRAMER MOTION -- no 'spring' transition  */
+        { type: 'linear', duration: 0.2, delay: stagger(0.05) }
       );
       return;
     }
@@ -77,7 +78,7 @@ export default function NewChallenge({ onDone }) {
                 visible: { opacity: 1, scale: [0.8, 1.3, 1] },
               }}
               exit={{ opacity: 1, scale: 1 }}
-              transition={{ type: 'spring' }}
+              /** FIX FOR NEWER FRAMER MOTION -- no 'spring' transition  */
               key={image.alt}
               onClick={() => handleSelectImage(image)}
               className={selectedImage === image ? 'selected' : undefined}
