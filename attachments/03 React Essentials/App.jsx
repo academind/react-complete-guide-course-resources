@@ -1,17 +1,16 @@
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
+import { CORE_CONCEPTS } from "./data.js"
 
 function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
 }
 
-function Header() {
+function Header(props) {
   return (
     <header>
-      <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
-      <h1>React Essentials</h1>
-      <p>
-        Fundamental React concepts you will need for almost any app you are going to build!
-      </p>
+      <img src={props.image} alt={props.title} />
+      <h1>{props.title}</h1>
+      <p> {props.description} </p>
     </header>
   );
 }
@@ -19,10 +18,13 @@ function Header() {
 function App() {
   return (
     <div>
-      <Header />
-      <main>
+      <Header {...CORE_CONCEPTS[0]}/>
+      <Header {...CORE_CONCEPTS[1]}/>
+      <Header {...CORE_CONCEPTS[2]}/>
+      <Header {...CORE_CONCEPTS[3]}/>
+{/*       <main>
         <h2>Time to get started!</h2>
-      </main>
+      </main> */}
     </div>
   );
 }
