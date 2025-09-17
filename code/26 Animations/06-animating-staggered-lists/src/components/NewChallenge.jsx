@@ -1,5 +1,5 @@
 import { useContext, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, stagger } from 'framer-motion';
 
 import { ChallengesContext } from '../store/challenges-context.jsx';
 import Modal from './Modal.jsx';
@@ -57,10 +57,10 @@ export default function NewChallenge({ onDone }) {
           <input ref={deadline} type="date" name="deadline" id="deadline" />
         </p>
 
-        <motion.ul 
-          id="new-challenge-images" 
+        <motion.ul
+          id="new-challenge-images"
           variants={{
-            visible: { transition: { staggerChildren: 0.05 } }
+            visible: { transition: { delayChildren: stagger(0.05) } }
           }}>
           {images.map((image) => (
             <motion.li
